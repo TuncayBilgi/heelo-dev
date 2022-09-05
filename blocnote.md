@@ -3,5 +3,5 @@
 ## Cours GitHub
 * ~Ajouter fichiers~
 * ~Modifier fichiers~
-* Voir l'historique
+* ~Voir l'historique~
 * Faire un merge
