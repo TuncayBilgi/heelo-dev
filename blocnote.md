@@ -4,4 +4,5 @@
 * ~Ajouter fichiers~
 * ~Modifier fichiers~
 * ~Voir l'historique~
-* Faire un merge
+* ~Faire un merge et un rebase~
+* ajouter utilisateurs
