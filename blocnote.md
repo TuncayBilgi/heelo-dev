@@ -7,7 +7,7 @@
 * ~Faire un merge et un rebase~
 * ~ajouter utilisateurs~
 
-## Autoformation POO Python 40min :
+## Autoformation POO Python 1h20min :
 * Cours Brucker :
     * ~Classes,constructeur,getters,setters,fonctions __nom__~
 * Design pattern en python
