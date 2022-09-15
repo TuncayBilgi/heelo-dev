@@ -24,8 +24,3 @@ def test_supprime_dans_panier():
     
 
     assert panier.montre_panier() == tuple()
-
-test_init()
-test_montre_panier_vide()
-test_ajoute()
-test_supprime_dans_panier()
