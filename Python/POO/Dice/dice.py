@@ -15,6 +15,6 @@ class Dice:
         self.position=position
     
     def roll(self) :
-        self.position=randint(1,6)
+        self.set_position(randint(1,6))
         return self
 
