@@ -5,6 +5,9 @@ class Dice:
     def __init__(self,position=1) :
         self.position=position
 
+    def __str__(self):
+        return str(self.position)
+
     def get_position(self):
         return self.position
     
@@ -13,4 +16,5 @@ class Dice:
     
     def roll(self) :
         self.position=randint(1,6)
+        return self
 

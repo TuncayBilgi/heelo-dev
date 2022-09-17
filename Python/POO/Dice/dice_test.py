@@ -4,6 +4,9 @@ def test_init():
     dice=Dice()
     assert dice is not None and dice.position==1
 
+def test_str():
+    dice=Dice()
+    assert print(dice)==print(1)
 
 def test_get():
     dice=Dice()
@@ -16,5 +19,5 @@ def test_set():
 
 def test_roll():
     dice=Dice()
-    dice.roll()
+    dice.roll().roll()
     assert dice.position in range(1,7)
