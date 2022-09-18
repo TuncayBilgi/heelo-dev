@@ -21,3 +21,5 @@ roll_de(roll_de(roll_de(dé)))
 dé.roll()
 
 roll_de(dé)
+dé.position="lol"
+print(dé.get_position())
