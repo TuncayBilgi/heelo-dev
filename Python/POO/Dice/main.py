@@ -1,11 +1,23 @@
+from nbappel import Nbappel
 from tapis_vert import Tapis_vert
+from dice import Dice
 from stat_dice import StatDice
 
-tapis=Tapis_vert()
+@Nbappel
+def roll_de(dé) :
+    dé.roll()
+    return dé
 
-statee=StatDice()
+dé=Dice()
+statdé=StatDice()
 
-for i in range(1,100):
-    statee.roll()
+print(Dice.get_compteur1())
+print(StatDice.get_compteur1())
+print(Dice.get_compteur2())
+print(StatDice.get_compteur2())
 
-print(statee.stat)
+roll_de(roll_de(roll_de(dé)))
+
+dé.roll()
+
+roll_de(dé)
