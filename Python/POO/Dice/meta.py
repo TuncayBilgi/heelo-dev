@@ -14,18 +14,19 @@ class Manouvellebase:
 
 class Maclassacorriger(metaclass=LowerAttrMeta):
     def __init__(self,second=2):
-        self.compteur=1
-        self.second=second
+        self._compteur=1
+        self._second=second
 
     
     def GET_COmpteur(self):
-        return self.compteur
+        return self._compteur
 
     @property
     def second(self):
+        print('property')
         return self._second
 
     @second.setter
     def second(self, value):
         self._second=value
-        self.compteur+=1
+        self._compteur+=1
