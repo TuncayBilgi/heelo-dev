@@ -35,8 +35,8 @@ function drawBullets() {
 }
  
 //spawnBullet
-function spawnBullet(x,y) {
-    gameState.bullets.push({x:x,y:y});}
+function spawnBullet() {
+    gameState.bullets.push({x:gameState.player.x,y:gameState.player.y});}
 
 //move
 function moveLeft() {
@@ -47,20 +47,19 @@ function moveRight() {
     gameState.player.x = (gameState.player.x + gameState.player.speed)%gameSize.x;
 }
 //fire
-function fire() {
-    spawnBullet(gameState.player.x, gameState.player.y);
-}
 //event listener
 document.addEventListener("keydown",function(event){
+
     if(event.key === "ArrowLeft") {
-    console.log(event)
+    
     moveLeft();
     }
     if(event.key === "ArrowRight") {
     moveRight();
     }
-    if (event.key === "Space") {
+    if (event.key === " ") {
     spawnBullet();
+    console.log(gameState.bullets)
     }
 
     })
@@ -73,7 +72,7 @@ function play() {
 
     //update game
         //update bullets
-    gameState.bullets.forEach(bullet => {bullet.y=bullet.y-10});
+    gameState.bullets.forEach(bullet => {bullet.y-=10});
    
 
     //Draw

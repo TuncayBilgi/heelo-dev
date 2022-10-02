@@ -11,5 +11,5 @@ responses
 testfixtures
 black
 pytest-watch
-mypy
-pytest-mypy
+pytest-flask
+pytest-flask-sqlalchemy
