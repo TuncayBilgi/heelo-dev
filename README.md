@@ -1,2 +1,8 @@
 # heelo-dev
-découverte de github
+Découverte de github et de python :
+
+- POO
+- TDD
+- Simulations
+- DevWeb
+

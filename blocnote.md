@@ -12,5 +12,5 @@
     * ~Classes,constructeur,getters,setters,fonctions __nom__, heritages,@decorators @properties @classlmethod @static method  @abstractmethod (https://www.tutorialspoint.com/abstract-base-classes-in-python-abc)(https://stackoverflow.com/questions/12179271/meaning-of-classmethod-and-staticmethod-for-beginner) , metaclass~ cours brucker méthode bound
     vidéos tutos de Cours python
 * TDD ok cours brucker
-* Design pattern en python https://refactoring.guru/design-patterns/decorator
-* Metaclasses
+* ~Design pattern en python https://refactoring.guru/design-patterns/decorator~
+* ~Metaclasses~
