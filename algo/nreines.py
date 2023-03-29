@@ -66,7 +66,7 @@ def nreines_aléatoire(n) :
 #nreines(8)
 #end = time.time()
 #elapsedTime = (end-start)
-#print(f"La résolution aléatoire prend {elapsedTime} s pour n=8, c'est long mais le programme à le mérite de rendre un résultat.")
+#print(f"La résolution aléatoire prend {elapsedTime} s pour n=8, c'est long mais le programme à le mérite de rendre un résultat.") test
 
 print(moyenne(nreines_aléatoire,3))
 print(moyenne(backtrack,[0],3))
