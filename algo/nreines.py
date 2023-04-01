@@ -47,40 +47,18 @@ def backtrack(args,n):
             return backtrack(args,n)
         
 
-# start=time.time()
-# backtrack([0],7)
-# end=time.time()
-# elapsedTime = (end-start)*1000
-# print(f"Le Backtracking récursif prend {elapsedTime} ms pour n=7, on ne peut pas aller au dessus de 7 à cause de la limite de récursion python. ")
-
-
 def nreines_aléatoire(n) :
     res = [0 for i in range(n)]
-    while cut(res,n) == True :
+    while cut(res,n) :
         res = []
         for i in range(n) :
             res.append(random.randint(0,n))
     return res
 
-#start = time.time()
-#nreines(8)
-#end = time.time()
-#elapsedTime = (end-start)
-#print(f"La résolution aléatoire prend {elapsedTime} s pour n=8, c'est long mais le programme à le mérite de rendre un résultat.") test
 
-print(moyenne(nreines_aléatoire,3))
-print(moyenne(backtrack,[0],3))
+for i in [3,4,5,6,7] :
+    print(moyenne(nreines_aléatoire,i))
+    print(moyenne(backtrack,[0],i))
+    print('')
 
 
-print(moyenne(nreines_aléatoire,7))
-print(moyenne(backtrack,[0],7))
-
-
-
-
-    
-
-
-
-
-            
